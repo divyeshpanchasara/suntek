@@ -1,0 +1,42 @@
+#include<stdio.h>
+void main()
+{
+    int n,i,j;
+    scanf("%d",&n);
+    for(i=0;i<=n;i++)
+    {
+        for(j=0;j<=i;j++)
+        {
+            if(j==0)
+                printf("*");
+            else
+                printf("%d",j);
+        }
+        for(j=i-1;j>=0;j--)
+        {
+            if(j==0)
+                printf("*");
+            else
+                printf("%d",j);
+        }
+        printf("\n");
+    }
+    for(i=n-1;i>=0;i--)
+    {
+        for(j=0;j<=i;j++)
+        {
+            if(j==0)
+                printf("*");
+            else
+                printf("%d",j);
+        }
+        for(j=i-1;j>=0;j--)
+        {
+            if(j==0)
+                printf("*");
+            else
+                printf("%d",j);
+        }
+        printf("\n");
+    }
+}
